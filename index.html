@@ -18,16 +18,16 @@
 
         CSS EXERCISES
 
-        11) Give a maximum width to the body and center it in the page
-        12) Set every h1 to be centered
-        13) Change the color of each link in the page
-        14) Create a class with a border
-        15) Set table to have rounded corners
-        16) Add margin between every paragraph
-        17) Create a class which change font size and boldness
-        18) Create a class to hide a content
-        19) Add a green border to each td
-        20) Add a dotted red border to each tr (note: tr does not accept a border property ;-) )
+        11) Give a maximum width to the body and center it in the page	✓
+        12) Set every h1 to be centered	✓
+        13) Change the color of each link in the page	✓
+        14) Create a class with a border	✓
+        15) Set table to have rounded corners	✓
+        16) Add margin between every paragraph	✓
+        17) Create a class which change font size and boldness	✓
+        18) Create a class to hide a content	✓
+        19) Add a green border to each td	✓
+        20) Add a dotted red border to each tr (note: tr does not accept a border property ;-) )	✓
 
         JS EXERCISES
 
@@ -72,6 +72,7 @@
 
     <head>
         <title>Title of the page</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
         <header> 
@@ -82,15 +83,15 @@
             <li>Two</li>
             <li>Three</li>
         </ol>
-        <table>
+        <table class="border">
             <tr>
                 <td>1</td> <td><a href="https://strive.school" target="_blank"><img src="https://strive.school/favicon.ico"></a></td> <td colspan="2">merged cells</td> <td>5</td>
             </tr>
             <tr>
-                <td>1</td> <td><a href="https://strive.school" target="_blank"><img src="https://strive.school/favicon.ico"></a></td> <td>3</td> <td>4</td> <td>5</td>
+                <td>TD on the right is set to hidden</td> <td class="hide"><a href="https://strive.school" target="_blank"><img src="https://strive.school/favicon.ico"></a></td> <td></td> <td>4</td> <td>5</td>
             </tr>
             <tr>
-                <td>1</td> <td><a href="https://strive.school" target="_blank"><img src="https://strive.school/favicon.ico"></a></td> <td>3</td> <td>4</td> <td>5</td>
+                <td><a href="" target="_blank">test link</a></td> <td><a href="https://strive.school" target="_blank"><img src="https://strive.school/favicon.ico"></a></td> <td>3</td> <td>4</td> <td>5</td>
             </tr>
             <tr>
                 <td>1</td> <td><a href="https://strive.school" target="_blank"><img src="https://strive.school/favicon.ico"></a></td> <td>3</td> <td>4</td> <td>5</td>
@@ -106,7 +107,7 @@
             </ul>
         </div>
         <footer>
-            <p>copyright by strive school student</p>
+            <p class="textManipulator">copyright by strive school student</p>
         </footer>
     </body>
 </html>

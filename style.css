@@ -1,0 +1,51 @@
+body {
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    max-width: 36px;
+}
+
+a {
+    color: #ff0000;
+  }
+
+a:visited {
+    color: rgb(255, 0, 255);
+  }
+
+a:hover, a:active, a:focus {
+    color:rgb(166, 255, 0);
+  }
+
+.border {
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 5px;
+}
+
+p{
+    margin: 20px;
+}
+
+.textManipulator {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+td {
+    padding: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: green;
+    border-bottom: dotted red;
+}
