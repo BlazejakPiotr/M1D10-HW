@@ -8,6 +8,9 @@ window.onload = function (){
     console.log(nestedArrays(5))
     console.log(compareArrays([1,2,3], [4,5,6,7]))
     sumArrays([1, 2, 5], [3, 1, 11])
+    getContainer()
+    console.log(getTd())
+    console.log('PAGE LOADED')
 }
 
 const typeInConsole = function (){
@@ -84,4 +87,73 @@ const sumArrays = function(firstArr, secondArr){
     else {
         console.log(`Second array has higher value, it value is: ${secondArr.reduce(reducer)}`)
     }
+}
+
+// DOM PART 
+
+const getContainer = function() {
+    let container = document.getElementById('container')
+    return console.log(container)
+}
+
+const getTd = function() {
+    let td = document.querySelectorAll('td')
+    return td
+}
+
+const cycle = function(str){
+    for(let i = 0; i < getTd().length; i++){
+        getTd()[i].innerHTML += str
+    }
+}
+
+const changeHeading = function(str){
+    let heading = document.querySelector('h1')
+    heading.innerText = str
+}
+
+const getTable = function(){
+    let getTable = document.querySelector('table')
+    return getTable
+}
+
+const addTableRow = function(){
+    let newTrNode = document.createElement('tr')
+    getTable().appendChild(newTrNode)
+}
+
+const addTestClass = function(){
+    let getAllTr = document.querySelectorAll('tr')
+    for (let i = 0; i < getAllTr.length; i++){
+        getAllTr[i].classList.add('test')
+    }
+}
+
+const addRedBgToAnchor = function(){
+    let getAllA = document.querySelectorAll('a')
+    console.log(getAllA)
+    for (let i = 0; i < getAllA.length; i++){
+        getAllA[i].style.backgroundColor = 'red'
+    }
+}
+
+const addNewUlNode = function(){
+    let getUl = document.querySelector('ul')
+    let newLiNode = document.createElement('li')
+    getUl.appendChild(newLiNode)
+}
+
+const createEmptyList = function(){
+    document.body.createElement('ul')
+}
+
+
+
+// DOM EXTRA PART
+const myFunction = function (){
+    let x = document.querySelectorAll('a')
+    for (let i = 0; i < x.length; i++){
+        x[i].addEventListener("mouseover", myFunction)
+    }
+    alert('LINK')
 }
